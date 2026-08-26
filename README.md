@@ -61,7 +61,7 @@ Contacto usado em todos os botões: WhatsApp `+351 961 944 270`.
 
 ## Links personalizados (UTM) para rastrear a origem do tráfego
 
-Depois de o Analytics estar ligado, para saber se uma visita veio da bio do Instagram, de um anúncio, etc., usar parâmetros UTM no link partilhado (o conteúdo da página não muda, é só para o Analytics separar as origens):
+Com o Analytics já ligado, para saber se uma visita veio da bio do Instagram, de um anúncio, etc., usar parâmetros UTM no link partilhado (o conteúdo da página não muda, é só para o Analytics separar as origens):
 
 - **Bio do Instagram:** `https://emart3d.com/?utm_source=instagram&utm_medium=bio`
 - **Stories/posts orgânicos:** `https://emart3d.com/?utm_source=instagram&utm_medium=social&utm_campaign=nome-do-post`
@@ -81,6 +81,6 @@ Basta abrir o `index.html` diretamente no navegador (duplo clique). O CSS e as i
 
 - Substituir os 3 testemunhos placeholder por avaliações reais de clientes.
 - Criar o Perfil da Empresa no Google (Google Business Profile) para começar a receber avaliações reais.
-- Ligar o Google Analytics de verdade (ver secção acima).
 - Rever/ajustar as fotos da vitrine à medida que houver peças novas em `assets/`.
 - Confirmar se a promessa "respondemos em menos de 24h" (no herói) reflete o tempo de resposta real.
+- Usar os links UTM (ver secção acima) na bio do Instagram e nos anúncios, para o Analytics distinguir a origem do tráfego.
