@@ -55,7 +55,9 @@ Contacto usado em todos os botões: WhatsApp `+351 961 944 270`.
 
 - `privacidade.html` explica que dados são recolhidos (contacto via WhatsApp e navegação via Google Analytics), para quê, e os direitos do titular ao abrigo do RGPD.
 - `js/consent.js` mostra um aviso de cookies na primeira visita. O Google Analytics só é carregado depois de a pessoa clicar em **"Aceitar"**. A escolha fica guardada no `localStorage` do navegador; o link **"Gerir cookies"** no rodapé apaga essa escolha e mostra o aviso outra vez.
-- **Falta ligar o Google Analytics de verdade**: em `js/consent.js`, a constante `GA_MEASUREMENT_ID` está com um valor placeholder (`G-XXXXXXXXXX`). Basta criar uma propriedade GA4 em [analytics.google.com](https://analytics.google.com), copiar o ID de medição (`G-...`) e substituir essa linha.
+- **Google Analytics já ligado** — propriedade GA4 `EMart3D - Site`, ID de medição `G-94781S3G6X` em `js/consent.js`. Só começa a enviar dados depois de a pessoa aceitar o aviso de cookies.
+- **"Cliques de saída"** está ativo na medição otimizada do GA4 — isso já regista automaticamente os cliques nos botões de WhatsApp (é um domínio diferente, `wa.me`), sem precisar de configurar eventos manualmente.
+- Não foi preciso colar o `<script>` de instalação manual do GA4 no `<head>` — o `js/consent.js` já injeta essa etiqueta sozinho, só depois do consentimento. O "modo de consentimento" (Consent Mode) sugerido pelo Google também não é necessário: o nosso banner já bloqueia por completo o carregamento do GA até haver aceitação, o que é mais restritivo do que o comportamento padrão do Consent Mode.
 
 ## Links personalizados (UTM) para rastrear a origem do tráfego
 

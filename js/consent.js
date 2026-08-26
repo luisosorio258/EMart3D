@@ -1,5 +1,5 @@
 (function () {
-  var GA_MEASUREMENT_ID = "G-XXXXXXXXXX"; // substituir pelo ID real do Google Analytics (Admin > Fluxos de dados)
+  var GA_MEASUREMENT_ID = "G-94781S3G6X";
   var STORAGE_KEY = "emart3d_cookie_consent";
 
   function loadAnalytics() {
