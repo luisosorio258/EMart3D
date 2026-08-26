@@ -12,6 +12,12 @@ EMart3D/
 ├── index.html          # página principal
 ├── 404.html             # página de erro personalizada
 ├── privacidade.html     # política de privacidade
+├── ig/
+│   └── index.html         # redireciona emart3d.com/ig -> link de UTM da bio
+├── social/
+│   └── index.html         # redireciona emart3d.com/social -> link de UTM de stories/posts
+├── ads/
+│   └── index.html         # redireciona emart3d.com/ads -> link de UTM de anúncios pagos
 ├── css/
 │   └── styles.css        # todo o estilo (cores, tipografia, layout)
 ├── js/
@@ -67,6 +73,14 @@ Com o Analytics já ligado, para saber se uma visita veio da bio do Instagram, d
 - **Stories/posts orgânicos:** `https://emart3d.com/?utm_source=instagram&utm_medium=social&utm_campaign=nome-do-post`
 - **Anúncios pagos:** `https://emart3d.com/?utm_source=instagram&utm_medium=paid&utm_campaign=nome-da-campanha`
 
+O Instagram mostra o link da bio tal como foi escrito, incluindo os parâmetros UTM — o que fica visualmente poluído. Por isso, há três redirecionadores curtos no próprio domínio (sem precisar de encurtador de terceiros como o bit.ly):
+
+- **`https://emart3d.com/ig`** — vai sempre para o link de UTM da bio (fixo).
+- **`https://emart3d.com/social`** — para stories e posts orgânicos. Aceita `?utm_campaign=nome-do-post` no final (ex.: `emart3d.com/social?utm_campaign=post-natal`); se não indicares nada, usa "organico" como nome da campanha.
+- **`https://emart3d.com/ads`** — para anúncios pagos. Aceita `?utm_campaign=nome-da-campanha` da mesma forma; sem indicação, usa "campanha".
+
+Todos os três acabam por enviar a pessoa para `emart3d.com` com os parâmetros de UTM corretos, para o Analytics separar as origens.
+
 ## Como ver a página localmente
 
 Basta abrir o `index.html` diretamente no navegador (duplo clique). O CSS e as imagens são carregados por caminho relativo, por isso funciona sem precisar de servidor.
@@ -83,4 +97,4 @@ Basta abrir o `index.html` diretamente no navegador (duplo clique). O CSS e as i
 - Criar o Perfil da Empresa no Google (Google Business Profile) para começar a receber avaliações reais.
 - Rever/ajustar as fotos da vitrine à medida que houver peças novas em `assets/`.
 - Confirmar se a promessa "respondemos em menos de 24h" (no herói) reflete o tempo de resposta real.
-- Usar os links UTM (ver secção acima) na bio do Instagram e nos anúncios, para o Analytics distinguir a origem do tráfego.
+- Usar `emart3d.com/ig` na bio do Instagram e `emart3d.com/social` / `emart3d.com/ads` nos posts, stories e anúncios (ver secção acima), para o Analytics distinguir a origem do tráfego.

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EMart3D</title>
+<meta name="robots" content="noindex">
+<script>
+  var params = new URLSearchParams(location.search);
+  var campaign = params.get("utm_campaign") || "campanha";
+  var dest = "https://emart3d.com/?utm_source=instagram&utm_medium=paid&utm_campaign=" + encodeURIComponent(campaign);
+  location.replace(dest);
+</script>
+</head>
+<body>
+  <p>A abrir a página da EMart3D... se não fores redirecionado, <a href="https://emart3d.com/?utm_source=instagram&utm_medium=paid">clica aqui</a>.</p>
+</body>
+</html>
