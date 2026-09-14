@@ -47,7 +47,7 @@ Secções da página:
 7. **Perguntas frequentes** — 5 perguntas (prazo, personalização, pagamento, envios, garantia).
 8. **Chamada final** — botão de WhatsApp, reforçado por um botão flutuante fixo no ecrã.
 
-Contacto usado em todos os botões: WhatsApp `+351 961 944 270`.
+Contacto usado em todos os botões: WhatsApp `+351 928 291 882`.
 
 ## SEO e partilha
 
